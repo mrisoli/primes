@@ -9,8 +9,16 @@ module Primes
     end
 
     # generates an array with all primes up to n
-    def self.upto(n)
+    def self.upto(n : Int32)
       Primes.new(n).primes
+    end
+
+    def self.is_prime(n : Int32)
+      Primes.new(Math.sqrt(n).floor).is_prime(n)
+    end
+
+    def is_prime(n : Int32)
+      @primes.includes?(n) || @primes.none?{|i| n % i == 0}
     end
 
     def sieve : Array(Int32)

@@ -1,4 +1,4 @@
-# primes
+# primes [![Build Status](https://travis-ci.org/mrisoli/primes.svg?branch=master)](https://travis-ci.org/mrisoli/primes)
 
 Library to check and generate prime numbers
 
